@@ -10,6 +10,11 @@ public class GiftDet{
 	private SimpleDateFormat dayForm = new SimpleDateFormat("dd/MM/yyyy");
 
 	//constructor 
-	public GiftDet
+	public GiftDet(String giftGiver,String giftDet,Date date){
+		
+		this.giftGiver = giftGiver;
+			
+	
+	}
 }
 
