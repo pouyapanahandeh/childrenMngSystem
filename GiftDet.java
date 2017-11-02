@@ -3,8 +3,9 @@ import java.text.*;
 
 public class GiftDet{
 
-	private String giftname;
+	private String giftDet;
 	private String giftGiver;
+	private Date dateDet;
 
 }
 
