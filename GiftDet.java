@@ -6,7 +6,7 @@ public class GiftDet{
 	private String giftGiver;
 	private String giftDet;
 	private Date dateDet;
-	i
+	
 	private SimpleDateFormat dayForm = new SimpleDateFormat("dd/MM/yyyy");
 
 	//constructor 
@@ -16,6 +16,19 @@ public class GiftDet{
 		this.giftDet = giftDet;
 		this.dateDet = dateDet;		
 	
+	}
+
+
+	public String getGifGiver(){
+		return giftGiver;
+	}
+
+	public String getGiftDet(){
+		return giftDet;
+	}
+
+	public Date getDateDet(){
+		return dateDet;
 	}
 }
 
