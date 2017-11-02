@@ -13,7 +13,8 @@ public class GiftDet{
 	public GiftDet(String giftGiver,String giftDet,Date date){
 		
 		this.giftGiver = giftGiver;
-			
+		this.giftDet = giftDet;
+		this.dateDet = dateDet;		
 	
 	}
 }
