@@ -18,7 +18,7 @@ public class GiftDet{
 	
 	}
 
-
+	/* 
 	public String getGifGiver(){
 		return giftGiver;
 	}
@@ -30,5 +30,11 @@ public class GiftDet{
 	public Date getDateDet(){
 		return dateDet;
 	}
-}
+	*/
 
+	@Override	
+	public String toString(){
+		return this.giftGiver + " " + this.giftDet + " " +
+		dayForm.format(dateDet) + " ."; 
+	}
+}
