@@ -41,17 +41,17 @@ public class GiftDet{
 		for(int j = i + 1 ; j < gifts.size() ; j++){
 			BabyDet numOne = gifts.get(i);
 			BabyDet numTWO = gifts.get(j);
-		if(numOne.getBabyName().compareTo(numTwo.getBabyName())>0)	  {
+		if(numOne.getBabyName().compareTo(numTWO.getBabyName())>0)	  {
 		BabyDet temp = numOne;
 		gifts.set(j, temp);
-		gifts.set(i, numTwo);
+		gifts.set(i, numTWO);
 	}
     }
   }
 }
 
 	public void printAll(){
-		for(GiftDet g : gifts){
+		for(BabyDet g : gifts){
 			System.out.println(g);
 		}
 	}	

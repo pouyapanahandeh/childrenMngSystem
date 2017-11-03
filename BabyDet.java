@@ -50,7 +50,6 @@ public class BabyDet{
 	}
 
 	public String toString(){
-		return babyName + " " + babyAge.toString() 
-			+ " " + birthday.toString();
+		return babyName + " " + birthday.toString();
 	}
 }
