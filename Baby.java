@@ -7,6 +7,9 @@ public class Baby{
 	
 	BabyDet objOne = new BabyDet();
 	GiftDet objThree = new GiftDet();
+
+	List<String> BabyList = new ArrayList<String>();
+	Scanner userInput = new Scanner(System.in);
 		
 
 
@@ -14,8 +17,7 @@ public class Baby{
 	System.out.println("please select one of the option : ");
 	
 	
-	int i = 1, j = 2, k = 3, q = 4;
-	int opt = 0;
+	
 
 	switch (opt){
 
