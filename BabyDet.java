@@ -5,10 +5,17 @@ public class BabyDet{
 
 	private String babyName;
 	private int babyAge;
+	private Date birthday;
+
+	public BabyDet(){
 	
-	public BabyDet(String babyName,int babyAge){
+	}
+	
+	public BabyDet(String babyName,int babyAge,Date birthday){
 		this.babyName = babyName;
 		this.babyAge  = babyAge;
+		this.birthday = birthday;
+		
 	}
 	
 	
