@@ -54,6 +54,11 @@ public class GiftDet{
 		for(BabyDet g : gifts){
 			System.out.println(g);
 		}
+	}
+
+	public void addGifts() {
+		
+		
 	}	
 			
 	/* 
