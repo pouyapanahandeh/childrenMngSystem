@@ -3,7 +3,7 @@ import java.text.*;
 
 public class GiftDet{
 	
-	private ArrayList<Babydet> gifts;
+	private ArrayList<BabyDet> gifts;
 
 	//private String giftGiver;
 	//private String giftDet;
