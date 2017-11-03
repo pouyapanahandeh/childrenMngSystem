@@ -17,38 +17,40 @@ public class BabyDet{
 		this.birthday = birthday;
 		
 	}
-	
-	
-	public BabyDet() {
-		
-	}
 
 
 	public String getBabyName(){
 		return babyName;
 	}
+
+	public void setBabyName(String babyName){
+		this.babyName = babyName;
+	}
 	
 	public int getBabyAge(){
 		return babyAge;
 	}
-	
-	
-	public void setBabyName(String name) {
-		
-		this.babyName = name;
-	}
-	
+
 	public void setBabyAge(int age){
-		this.babyAge = age;
+		this.babyAge = babyAge;
 	}
-
-
-	public int setBabyAge(String next) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
 	
+	public Date getBirthday(){
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday){
+		this.birthday = birthday;
+	}
+
+	public boolean equals(BabyDet cnd){
+		if(!this.babyName.equals(cnd.babyName))
+			return false;
+		return true;
+	}
+
+	public String toString(){
+		return babyName + " " + babyAge.toString() 
+			+ " " + birthday.toString();
+	}
 }
-	
-
