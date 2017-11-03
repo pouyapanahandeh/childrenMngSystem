@@ -34,9 +34,6 @@ public class Baby{
 		System.out.println("please add baby's name : ");
 		String name = userInput.next();
 	
-		System.out.println("please enter the Baby's Age : ");
-		int age = userInput.next();
-
 		System.out.println("please enter Birthday : ");
 		Date day = new Date();
 
@@ -52,9 +49,12 @@ public class Baby{
 			}
 		}
 
-		BabyDet = new BabyDet(name, age, day);
-				
+		BabyDet = new BabyDet(name, age, birthday);
+		giftDet.addGifts(g);
+		System.out.println("add succefully");
+		break;
 
+	
 
 
 	}
