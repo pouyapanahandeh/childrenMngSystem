@@ -56,7 +56,7 @@ public class GiftDet{
 		}
 	}	
 			
- 
+	/* 
 	public GiftDet() {
 		// TODO Auto-generated constructor stub
 	}
@@ -72,5 +72,5 @@ public class GiftDet{
 	public Date getDateDet(){
 		return dateDet;
 	}
-	
+	*/	
 }
