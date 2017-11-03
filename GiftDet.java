@@ -18,6 +18,10 @@ public class GiftDet{
 	
 	}
  
+	public GiftDet() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getGifGiver(){
 		return giftGiver;
 	}

@@ -5,8 +5,9 @@ public class Baby{
 
 	public static void main(String[] args){
 	
-//	BabyDet objOne = new BabyDet();
-//	GiftDet objThree = new GiftDet();
+		
+	BabyDet objOne = new BabyDet();
+	GiftDet objThree = new GiftDet();
 
 
 	List<String> BabyList = new ArrayList<String>();
@@ -29,7 +30,13 @@ public class Baby{
 
 	if(selector == 1){
 		System.out.println("Please enter Babys Name : ");
-			
+		BabyList.add((String) objOne.setBabyName(userInput.next()));
+		System.out.println("name added successfully." + "\n" + "Please enter the baby's age: ");
+		BabyList.addAll((int) objOne.setBabyAge(userInput.next()), BabyList);
+		
+		for(int i = 0 ; i < BabyList.size() ; i++){
+			System.out.println(BabyList.get(i).getBabyName() + " " + BabyList.get(i).getBabyAge());
+		}
 	}
 
     }
