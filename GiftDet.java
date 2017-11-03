@@ -35,6 +35,9 @@ public class GiftDet{
 	public int theNoGifts(){
 		return gifts.size();
 	}
+
+	public void sort(){
+			for(int i = 0 ; i <
  
 	public GiftDet() {
 		// TODO Auto-generated constructor stub
