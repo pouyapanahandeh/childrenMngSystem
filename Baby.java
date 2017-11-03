@@ -54,7 +54,13 @@ public class Baby{
 		System.out.println("add succefully");
 		break;
 
-	
+		case 2 :
+			System.out.println("List of babys");
+			giftDet.sort();
+			giftDet.printAll();
+		break;
+		
+		}	
 
 
 	}
