@@ -16,23 +16,11 @@ public class Baby{
 	System.out.println("Welcome to Baby  Management System");
 	System.out.println("please select one of the option : ");
 	
-	
-	
-
-	switch (opt){
-
-	case 1 : System.out.println("Hi"); break;
-	case 2 : System.out.println("Hi Hi"); break;
-	case 3 : System.out.println("Hi Hi Hi"); break;
-	case 4 : System.out.println("Hi Hi Hi Hi"); break;
-
-	default : System.out.println("You entered wrong character"); break; 
-	
-	}
-
-
-
-
+	System.out.println("1-Add new Baby." + "/n" +
+	 "2-List of Babies by Age" + "/n" +
+	 "3-List of Babies by Name" + "/n" +
+	 "4-Add new Gift" + "/n" +
+	 "5-List of Gifts" + "/n");	
 
 
 	}
