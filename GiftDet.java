@@ -16,6 +16,18 @@ public class GiftDet {
 		this.expl = expl;
 		this.dateDet = dateDet;
 	}
+
+//	
+//	//private SimpledateDetFormat dayForm = new SimpledateDetFormat("dd/MM/yyyy");
+//
+//	//constructor 
+//	//public (String GiftDetGiver,String ,dateDet dateDet){
+//	//	
+//	//	this.GiftDetGiver = GiftDetGiver;
+//	//	this. = ;
+//	//	this.dateDetDet = dateDetDet;		
+//	//
+//	//}
 	public GiftDet(String person,String expl,String dateDet){
 		try{
 			this.person = person;
@@ -45,76 +57,25 @@ public class GiftDet {
 //		System.out.println(g);
 //	}
 //}
+	
+//	public void setGiftDets(ArrayList<BabyDet> GiftDets){
+//	this.GiftDets = GiftDets;
+//}
+//
+//public (){
+//	GiftDets = new ArrayList<BabyDet>();
+//}
+//
+//public void addGiftDets(BabyDet g){
+//	GiftDets.add(g);
+//}
+//
+//public int theNoGiftDets(){
+//	return GiftDets.size();
+//}
+//
 	@Override
 	public String toString(){
 		return this.person + this.expl + dateDetFormat.format(dateDet);
 	}
 }
-
-
-
-
-
-
-
-//import java.util.*;
-//import java.text.*;
-//
-//public class {
-//	
-//	private ArrayList<BabyDet> GiftDets;
-//
-
-//	
-//	//private SimpledateDetFormat dayForm = new SimpledateDetFormat("dd/MM/yyyy");
-//
-//	//constructor 
-//	//public (String GiftDetGiver,String ,dateDet dateDet){
-//	//	
-//	//	this.GiftDetGiver = GiftDetGiver;
-//	//	this. = ;
-//	//	this.dateDetDet = dateDetDet;		
-//	//
-//	//}
-//
-//	public void setGiftDets(ArrayList<BabyDet> GiftDets){
-//		this.GiftDets = GiftDets;
-//	}
-//
-//	public (){
-//		GiftDets = new ArrayList<BabyDet>();
-//	}
-//
-//	public void addGiftDets(BabyDet g){
-//		GiftDets.add(g);
-//	}
-//
-//	public int theNoGiftDets(){
-//		return GiftDets.size();
-//	}
-//
-
-//
-//	public void addGiftDets() {
-//		
-//		
-//	}	
-			
-	/* 
-	public () {
-		// TODO Auto-generated constructor stub
-	}
-
-	public String getGifGiver(){
-		return GiftDetGiver;
-	}
-
-	public String get(){
-		return ;
-	}
-
-	public dateDet getdateDetDet(){
-		return dateDetDet;
-	}
-	*/	
-//}
