@@ -118,7 +118,7 @@ public class Baby {
 								day = dateFormat.parse(userInput.nextLine());
 								validDate = true;
 							}catch(ParseException e){
-								System.out.println("Invalid date, type it again");
+								System.out.println("Invalid date, type it again like yyyy/MM/dd .");
 								validDate = false;
 							}
 						}
