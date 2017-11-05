@@ -1,81 +1,60 @@
 import java.util.Date;
 import java.text.*;
-public class GiftDet {
-	private String person;
-	private String expl;
-	private Date dateDet;
-//	//private String GiftDetGiver;
-//	//private String ;
-//	//
-	private SimpleDateFormat dateDetFormat = new SimpleDateFormat("yyyyMMdd");
-	public GiftDet(){
-		
-	}
-	public GiftDet(String person,String expl,Date dateDet){
-		this.person = person;
-		this.expl = expl;
-		this.dateDet = dateDet;
-	}
 
-//	
-//	//private SimpledateDetFormat dayForm = new SimpledateDetFormat("dd/MM/yyyy");
-//
-//	//constructor 
-//	//public (String GiftDetGiver,String ,dateDet dateDet){
-//	//	
-//	//	this.GiftDetGiver = GiftDetGiver;
-//	//	this. = ;
-//	//	this.dateDetDet = dateDetDet;		
-//	//
-//	//}
-	public GiftDet(String person,String expl,String dateDet){
+public class GiftDet {
+	
+	private String person;
+	private String comment;
+	private Date date;
+	
+//	public String getPerson() {
+//		return person;
+//	}
+//	public void setPerson(String person) {
+//		this.person = person;
+//	}
+//	public String getComment() {
+//		return comment;
+//	}
+//	public void setComment(String comment) {
+//		this.comment = comment;
+//	}
+//	public Date getDate() {
+//		return date;
+//	}
+//	public void setDate(Date date) {
+//		this.date = date;
+//	}
+	
+	private SimpleDateFormat myFormat = new SimpleDateFormat("yyyy/MM/dd");
+	public GiftDet() {
+		// not deleted
+	}
+	public GiftDet(String person, String comment, Date date){
+		
+		this.person = person;
+		this.comment = comment;
+		this.date = date;
+
+	}
+	
+	public GiftDet(String person,String comment,String date){
 		try{
+	
 			this.person = person;
-			this.expl = expl;
-			this.dateDet = dateDetFormat.parse(dateDet);
-			}catch(ParseException e){
-				System.out.println(e);
+			this.comment = comment;
+			this.date = myFormat.parse(date);
+			
+		}catch(ParseException e){
+				System.out.println("there is error (202).");
 			}
 	}
-	
-//	public void sort(){
-//    for(int i = 0 ; i < GiftDets.size() - 1 ; i++){
-//	for(int j = i + 1 ; j < GiftDets.size() ; j++){
-//		BabyDet numOne = GiftDets.get(i);
-//		BabyDet numTWO = GiftDets.get(j);
-//	if(numOne.getBabyName().compareTo(numTWO.getBabyName())>0)	  {
-//	BabyDet temp = numOne;
-//	GiftDets.set(j, temp);
-//	GiftDets.set(i, numTWO);
-//}
-//}
-//}
-//}
-//
-//public void printAll(){
-//	for(BabyDet g : GiftDets){
-//		System.out.println(g);
+//	public String toString(){
+//		return name+"\n"+birthday.toString();
 //	}
-//}
 	
-//	public void setGiftDets(ArrayList<BabyDet> GiftDets){
-//	this.GiftDets = GiftDets;
-//}
-//
-//public (){
-//	GiftDets = new ArrayList<BabyDet>();
-//}
-//
-//public void addGiftDets(BabyDet g){
-//	GiftDets.add(g);
-//}
-//
-//public int theNoGiftDets(){
-//	return GiftDets.size();
-//}
-//
 	@Override
 	public String toString(){
-		return this.person + this.expl + dateDetFormat.format(dateDet);
+		return this.person+ " " + this.comment + " " + myFormat.format(date);
 	}
 }
